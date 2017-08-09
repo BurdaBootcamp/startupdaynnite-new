@@ -58,10 +58,10 @@ h2, h3, h4, h5 {
       text-align: center; }
       @media (max-width: 875px) {
         .splash .element img.header-icon {
-          bottom: 65%;
-          width: 30%;
-          right: 35%;
-          left: 35%; } }
+          bottom: 70%;
+          width: 25%;
+          right: 37.5%;
+          left: 37.5%; } }
     .splash .element img.headline {
       bottom: 50%;
       width: 60%;
@@ -71,7 +71,24 @@ h2, h3, h4, h5 {
       text-align: center; }
       @media (max-width: 875px) {
         .splash .element img.headline {
-          bottom: 50%;
+          bottom: 55%;
+          width: 80%;
+          right: 10%;
+          left: 10%; } }
+    .splash .element div.timedate {
+      bottom: 40%;
+      font-size: 32px;
+      font-family: 'TWS Savory Thin';
+      color: #F0F3F5;
+      width: 60%;
+      position: absolute;
+      right: 20%;
+      left: 20%;
+      text-align: center; }
+      @media (max-width: 875px) {
+        .splash .element div.timedate {
+          font-size: 24px;
+          bottom: 35%;
           width: 80%;
           right: 10%;
           left: 10%; } }
@@ -79,7 +96,7 @@ h2, h3, h4, h5 {
       font-family: 'TWS Savory Thin';
       font-size: 23px;
       color: #F0F3F5;
-      bottom: 30%;
+      bottom: 25%;
       width: 60%;
       position: absolute;
       right: 20%;
@@ -191,6 +208,25 @@ section.startupnite {
     padding-top: 20px;
     padding-bottom: 20px;
     border-radius: 0px; }
+
+section.winners {
+  margin-top: 150px;
+  color: #2D6783; }
+  section.winners .headline {
+    text-transform: uppercase;
+    margin-top: 50px;
+    font-size: 30px;
+    letter-spacing: 0;
+    font-family: 'TWS Savory Regular';
+    font-weight: 400; }
+  section.winners .row {
+    margin-top: 100px; }
+    section.winners .row p {
+      min-height: 225px;
+      font-size: 18px; }
+      @media (max-width: 768px) {
+        section.winners .row p {
+          min-height: 250px; } }
 
 section.partner {
   margin-top: 150px;

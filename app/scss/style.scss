@@ -71,10 +71,10 @@ h2,h3,h4,h5{
       left:42.5%;
       text-align: center;
       @media(max-width: $breakpoint-splash) {
-        bottom: 65%;
-        width: 30%;
-        right:35%;
-        left:35%;
+        bottom: 70%;
+        width: 25%;
+        right:37.5%;
+        left:37.5%;
       }
     }
     img.headline {
@@ -85,7 +85,25 @@ h2,h3,h4,h5{
       left:20%;
       text-align: center;
       @media(max-width: $breakpoint-splash) {
-        bottom: 50%;
+        bottom: 55%;
+        width: 80%;
+        right:10%;
+        left:10%;
+      }
+    }
+    div.timedate {
+      bottom: 40%;
+      font-size: 32px;
+      font-family: 'TWS Savory Thin';
+      color: $grey;
+      width:60%;
+      position:absolute;
+      right:20%;
+      left:20%;
+      text-align: center;
+      @media(max-width: $breakpoint-splash) {
+        font-size: 24px;
+        bottom: 35%;
         width: 80%;
         right:10%;
         left:10%;
@@ -95,7 +113,7 @@ h2,h3,h4,h5{
       font-family: 'TWS Savory Thin';
       font-size: 23px;
       color: $grey;
-      bottom:30%;
+      bottom:25%;
       width:60%;
       position:absolute;
       right:20%;
@@ -229,6 +247,29 @@ section.startupnite {
     padding-top: 20px;
     padding-bottom: 20px;
     border-radius: 0px;
+  }
+}
+
+section.winners {
+  margin-top: 150px;
+  color: $blue;
+  .headline {
+    text-transform: uppercase;
+    margin-top: 50px;
+    font-size: 30px;
+    letter-spacing: 0;
+    font-family: 'TWS Savory Regular';
+    font-weight: 400;
+  }
+  .row {
+    margin-top: 100px;
+    p{
+      min-height: 225px;
+      font-size: 18px;
+      @media (max-width: 768px){
+        min-height: 250px;
+      }
+    }
   }
 }
 
