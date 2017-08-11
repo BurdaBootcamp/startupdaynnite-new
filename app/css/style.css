@@ -112,6 +112,11 @@ h2, h3, h4, h5 {
 
 section.application {
   margin-bottom: 150px; }
+  section.application.mob {
+    width: 100%;
+    position: absolute;
+    bottom: 5%;
+    margin-bottom: 0px; }
 
 @-moz-document url-prefix() {
   section.application {
@@ -131,6 +136,8 @@ section.application {
 
 section.info {
   color: #2D6783; }
+  section.info img {
+    margin-top: 100px; }
   section.info .headline {
     text-transform: uppercase;
     margin-top: 50px;
@@ -156,18 +163,24 @@ section.speaker {
     font-family: 'TWS Savory Regular'; }
   section.speaker .row {
     margin-top: 50px; }
-    section.speaker .row .speaker-box img {
-      width: 60%; }
-    section.speaker .row .speaker-box .name {
-      font-size: 27px;
-      font-weight: 600;
-      color: #2D6783; }
-    section.speaker .row .speaker-box .description {
-      font-size: 20px;
-      color: #2D6783; }
-      section.speaker .row .speaker-box .description a {
-        text-decoration: none;
+    section.speaker .row .speaker-box {
+      padding-bottom: 20px; }
+      section.speaker .row .speaker-box img {
+        width: 60%;
+        padding-bottom: 10px; }
+      section.speaker .row .speaker-box .name {
+        font-size: 27px;
+        font-weight: 600;
         color: #2D6783; }
+        section.speaker .row .speaker-box .name a {
+          text-decoration: none;
+          color: #2D6783; }
+      section.speaker .row .speaker-box .description {
+        font-size: 20px;
+        color: #2D6783; }
+        section.speaker .row .speaker-box .description a {
+          text-decoration: none;
+          color: #2D6783; }
 
 section.timeline {
   margin-top: 150px;
@@ -183,20 +196,69 @@ section.timeline {
     margin-top: 100px; }
     section.timeline .row img {
       width: 80%; }
+  section.timeline .btn {
+    margin-top: 20px;
+    color: #F0F3F5;
+    background-color: #FC4F42;
+    width: 100%;
+    font-size: 15px;
+    letter-spacing: 2.4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 0px; }
 
-section.startupnite {
+section.jury {
   margin-top: 150px;
   color: #2D6783; }
-  section.startupnite img {
-    width: 300px; }
-  section.startupnite .description {
+  section.jury .headline {
+    text-transform: uppercase;
     margin-top: 50px;
-    font-size: 26px;
-    letter-spacing: 0; }
-    @media (max-width: 875px) {
-      section.startupnite .description {
-        font-size: 18px; } }
-  section.startupnite .btn {
+    font-size: 30px;
+    letter-spacing: 0;
+    font-family: 'TWS Savory Regular';
+    margin-bottom: 50px; }
+  section.jury .jury-box {
+    padding-bottom: 20px; }
+    section.jury .jury-box img {
+      width: 60%;
+      padding-bottom: 10px; }
+    section.jury .jury-box .name {
+      font-size: 27px;
+      font-weight: 600;
+      color: #2D6783; }
+      section.jury .jury-box .name a {
+        text-decoration: none;
+        color: #2D6783; }
+    section.jury .jury-box .description {
+      font-size: 20px;
+      color: #2D6783; }
+      section.jury .jury-box .description a {
+        text-decoration: none;
+        color: #2D6783; }
+
+section.qanda {
+  margin-top: 150px;
+  font-size: 17px;
+  color: #2D6783;
+  margin-bottom: 50px; }
+  section.qanda .headline {
+    text-transform: uppercase;
+    margin-top: 150px;
+    font-size: 30px;
+    letter-spacing: 0;
+    font-family: 'TWS Savory Regular'; }
+  section.qanda .col-md-6 {
+    padding: 20px 80px;
+    min-height: 260px; }
+    @media screen and (max-width: 600px) {
+      section.qanda .col-md-6 {
+        padding: 20px; } }
+    section.qanda .col-md-6 b {
+      display: block;
+      padding-bottom: 15px; }
+  section.qanda .btn {
     margin-top: 50px;
     color: #F0F3F5;
     background-color: #FC4F42;
@@ -208,6 +270,33 @@ section.startupnite {
     padding-top: 20px;
     padding-bottom: 20px;
     border-radius: 0px; }
+
+section.startupnite {
+  margin-top: 150px;
+  color: #2D6783; }
+  section.startupnite .headline {
+    text-transform: uppercase;
+    margin-top: 150px;
+    font-size: 30px;
+    letter-spacing: 0;
+    font-family: 'TWS Savory Regular'; }
+  section.startupnite img {
+    width: 300px; }
+  section.startupnite .description {
+    margin-top: 50px;
+    font-size: 26px;
+    letter-spacing: 0; }
+    @media (max-width: 875px) {
+      section.startupnite .description {
+        font-size: 18px; } }
+  section.startupnite .benefits {
+    margin-top: 100px;
+    font-size: 17px; }
+    section.startupnite .benefits .icon img {
+      width: 40%; }
+    section.startupnite .benefits b {
+      display: block;
+      padding-bottom: 15px; }
 
 section.winners {
   margin-top: 150px;
@@ -241,10 +330,46 @@ section.partner {
   section.partner .row {
     margin-top: 50px; }
 
-.pre-footer {
+section.pre-footer {
   width: 100%;
   margin-top: 150px;
-  margin-bottom: -10px; }
+  margin-bottom: -10px;
+  color: #2D6783; }
+  section.pre-footer .headline {
+    text-transform: uppercase;
+    margin-top: 50px;
+    font-size: 30px;
+    letter-spacing: 0;
+    font-family: 'TWS Savory Regular';
+    font-weight: 300; }
+  section.pre-footer .countdown {
+    color: #F0F3F5;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 750px;
+    left: 50%;
+    margin-left: -375px;
+    padding-top: 250px;
+    position: absolute; }
+    section.pre-footer .countdown #countdown {
+      font-size: 60px;
+      letter-spacing: 0;
+      font-family: 'TWS Savory Thin';
+      font-weight: 200; }
+    section.pre-footer .countdown .btn {
+      margin-top: 20px;
+      color: #F0F3F5;
+      background-color: #FC4F42;
+      width: 45%;
+      font-size: 15px;
+      letter-spacing: 2.4px;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      border-radius: 0px; }
+  section.pre-footer img {
+    width: 100%; }
 
 .footer {
   -webkit-transform: translateZ(0);

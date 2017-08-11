@@ -21,6 +21,7 @@
 
     <script src="js/jquery-1.12.0.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/countdown.js"></script>
     <!-- Latest compiled and minified JavaScript -->
 
     <meta property="og:url" content="http://startupdaynnite.de/" />
@@ -90,9 +91,29 @@
     </div>
     <div class="layer bottom">
       <!--<img src="images/splashscreen_arrow.svg" onclick="scroll('we-prototype')">-->
+      <section class="application mob hidden-xs hidden-sm">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 col-md-offset-2">
+              <a target="_blank" onclick="startupLead()" href="https://goo.gl/forms/iQ4ZKQ0pfWqZEmVh2">
+                <div class="btn">
+                  STARTUPS: APPLY NOW TO PITCH
+                </div>
+              </a>
+            </div>
+            <div class="col-md-4">
+              <a target="_blank" onclick="visitorLead()" href="https://burdabootcamp.typeform.com/to/nY42IM">
+                <div class="btn">
+                  VISITORS: APPLY FOR FREE TICKET!
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   </div>
-  <section class="application">
+  <section class="application hidden-md hidden-lg">
     <div class="container">
       <div class="row">
         <div class="col-md-4 col-md-offset-2">
@@ -130,10 +151,10 @@
         Meet the speakers
       </div>
       <div class="row">
-        <div class="col-md-3 speaker-box">
+        <div class="col-md-offset-3 col-md-3 speaker-box">
           <img class="img-circle" src="images/speaker/judithwilliams.jpg"/>
           <div class="name">
-            Judith Williams
+            <a target="_blank" href="https://www.judithwilliams.de/">Judith Williams</a>
           </div>
           <div class="description">
              Investor, Höhle der Löwen (VOX)
@@ -169,6 +190,17 @@
       <div class="row">
         <img class="hidden-xs" src="images/timeline_timeline.png"/>
         <img class="hidden-sm hidden-md hidden-lg" src="images/timeline_timeline_xs.png"/>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-offset-4 col-md-4">
+              <a target="_blank" onclick="visitorLead()" href="https://burdabootcamp.typeform.com/to/nY42IM">
+                <div class="btn">
+                  VISITORS: APPLY FOR FREE TICKET!
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -177,23 +209,158 @@
       <img src="images/startupnight_logo.png"/>
       <div class="description">
         Startup Night @Burda Bootcamp is back - pitch your startup and <br />
-        win free office space, mentoring and access to the network of <br />
+        win free <b>office space</b>, <b>mentoring</b> and <b>access to the network</b> of <br />
         Hubert Burda Media, one of Germany’s biggest media houses. We <br />
         focus on b2c startups who have validated the market and created <br />
         the first MVP.<br />
         <br />
-        Application is open until August 31 2017.
+        Application is open until <b>August 28 2017</b>.
       </div>
-      <div class="row">
-        <div class="col-md-6 col-md-offset-3 col-lg-4 col-lg-offset-4">
-          <a target="_blank" onclick="startupLead()" href="https://goo.gl/forms/iQ4ZKQ0pfWqZEmVh2">
-            <div class="btn">
-              STARTUPS: APPLY NOW TO PITCH
-            </div>
-          </a>
+      <div class="row benefits">
+        <div class="col-md-3 col-md-offset- ">
+          <div class="icon">
+            <img src="images/icons/icon_superoffice.svg" alt="" />
+          </div>
+          <br>
+          <br>
+          <b>Free Coworking Space</b>
+          <p>
+            Work at an awesome location in Munich with other startups
+          </p>
+        </div>
+
+        <div class="col-md-3 col-md-offset- ">
+          <div class="icon">
+            <img src="images/icons/icon_networking.svg" alt="" />
+          </div>
+          <br>
+          <br>
+          <b>Network</b>
+          <p>
+            Get access to Burda’s network & business development opportunities
+          </p>
+        </div>
+        <div class="col-md-3 col-md-offset-">
+          <div class="icon">
+            <img src="images/icons/icon_mentoring.svg" alt="" />
+          </div>
+          <br>
+          <br>
+          <b>Mentoring</b>
+          <p>
+            Get feedback for business development, product, marketing & strategy
+          </p>
+        </div>
+        <div class="col-md-3 col-md-offset-">
+          <div class="icon">
+            <img style="width: 35%;" src="images/icons/icon_tickets.png" alt="" />
+          </div>
+          <br>
+          <br>
+          <b>Conference Tickets</b>
+          <p>
+            Get free tickets to Munich conferences
+          </p>
         </div>
       </div>
     </div>
+  </section>
+  <section class="jury">
+    <div class="container">
+      <img src="images/jury_header_icon.svg"/>
+      <div class="headline">
+        Meet our jury
+      </div>
+      <div class="row">
+        <div class="col-md-offset-3 col-md-3 jury-box">
+          <img class="img-circle" src="images/jury/florianmann.jpg"/>
+          <div class="name">
+            Dr. Florian Mann
+          </div>
+          <div class="description">
+             Geschäftsführer, Werk1
+          </div>
+        </div>
+        <div class="col-md-3 jury-box">
+          <img class="img-circle" src="images/jury/ralfbruestle.jpg"/>
+          <div class="name">
+            Ralf Brüstle
+          </div>
+          <div class="description">
+             CEO, StartupCon
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="qanda">
+    <div class="headline">Q&A</div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <b>Where and when?</b>
+          <p>We will start at 5pm and will be done at about 11pm after which you will have the opportunity to network and socialize. We will invite you to the Burda Bootcamp, Arabellastrasse 23, 2nd floor, Munich.
+          </p>
+        </div>
+        <div class="col-md-6">
+          <b> When does the application period end? </b>
+          <p>
+            You can apply until August, 28st. We will let you know by September 4th, if you have been selected, so that you have enough time to prepare your pitch.
+          </p>
+        </div>
+        <div class="col-md-6">
+          <b> What type of startups are you looking for?  </b>
+          <p>
+            Our main focus are the following areas: Food, Fashion, Beauty, Home & Garden, News, Entertainment, Technology, Advertising, Mobile & Social. However, we are not limited to these, so feel free to apply, even if you don’t find yourself in one of those categories.
+          </p>
+        </div>
+        <div class="col-md-6">
+          <b>What do we need to prepare? </b>
+          <p>
+            Just fill out the questionnaire and we will get back to you if we need more information. Selected startups will then have to prepare a 3-min pitchdeck and a small booth for the evening September 13th, 2017.
+          </p>
+        </div>
+        <div class="col-md-6">
+          <b>Do we get any funding?</b>
+          <p>
+            We do not give financial support, but we help startups to develop their business further by supporting them with free coworking space, mentoring as well as access to the Burda network.
+          </p>
+        </div>
+        <div class="col-md-6">
+          <b>What happens after the 3-months? </b>
+          <p>
+            Together with your team we will see how far you have developed your business and come up with a follow-up plan. We will discuss options together with you during your 3-months at the Burda Bootcamp.
+          </p>
+        </div>
+        <div class="col-md-6">
+          <b>How do you judge the pitches?</b>
+          <p>
+            You have to be awesome!<br /> Apart from that, we will challenge your business model and market potential. We will also pay close attention to the founding team.
+          </p>
+        </div>
+        <div class="col-md-6">
+          <b>Startup Fair before pitches</b>
+          <p>
+            If you have been chosen to pitch, you should prepare a stand for our Startup Fair where you may present your startup to the jury and guests before and after the pitches and also during the break when the jury is discussing their decision. You will have a table available (Size: 1,40m/0,60m) and can get creative with the set up!            </p>
+        </div>
+        <div class="col-md-offset-3 col-md-6">
+          <b> Further questions? </b>
+          <p>
+            Please feel free to contact us anytime! <a href="mailto:startups@burdabootcamp.de">startups@burdabootcamp.de</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6 col-md-6 col-md-offset-3 col-lg-4 col-lg-offset-4">
+        <a target="_blank" onclick="startupLead()" href="https://goo.gl/forms/iQ4ZKQ0pfWqZEmVh2">
+          <div class="btn">
+            STARTUPS: APPLY NOW TO PITCH
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
   </section>
   <section class="winners">
     <div class="container">
@@ -202,7 +369,7 @@
         Meet our previous winners
       </div>
       <div class="row">
-        <div class="col-md-4 col-md-offset-2 col-lg-offset-2 col-lg-4 col-sm-6" style="display: none">
+        <div class="col-sm-6 col-md-4 col-md-offset-2 col-lg-offset-2 col-lg-4 col-sm-6" style="display: none">
           <div class="box">
             <a target="_blank" href="http://www.smokeless.world/">
               <img src="images/winners/smokeless.jpg" class="img-responsive" alt="" />
@@ -214,7 +381,7 @@
             </p>
           </div>
         </div>
-        <div class="col-md-4 col-md-offset-1 col-lg-offset-1 col-lg-4 col-sm-6">
+        <div class="col-sm-6 col-md-4 col-md-offset-1 col-lg-offset-1 col-lg-4 col-sm-6">
           <div class="box">
             <a target="_blank" href="https://diefrischemanufaktur.de/">
               <img src="images/winners/fruit2go.jpg" class="img-responsive" alt="" />
@@ -225,7 +392,7 @@
             </p>
           </div>
         </div>
-        <div class="col-md-4 col-md-offset-2 col-lg-offset-2 col-lg-4 col-sm-6">
+        <div class="col-sm-6 col-md-4 col-md-offset-2 col-lg-offset-2 col-lg-4 col-sm-6">
           <div class="box">
             <a target="_blank" href="http://www.jobninja.eu/">
               <img src="images/winners/jobninja.jpg" class="img-responsive" alt="" />
@@ -237,7 +404,7 @@
             </p>
           </div>
         </div>
-        <div class="col-md-offset-1 col-lg-offset-1 col-md-4 col-lg-4 col-sm-6">
+        <div class="col-sm-6 col-md-offset-1 col-lg-offset-1 col-md-4 col-lg-4 col-sm-6">
           <div class="box">
             <a target="_blank" href="http://www.baristina.com/">
               <img src="images/winners/baristina.jpg" class="img-responsive" alt="" />
@@ -249,7 +416,7 @@
             </p>
           </div>
         </div>
-        <div class="col-md-4 col-md-offset-2 col-lg-offset-2 col-lg-4 col-sm-6">
+        <div class="col-sm-6 col-md-4 col-md-offset-2 col-lg-offset-2 col-lg-4 col-sm-6">
           <div class="box">
             <a target="_blank" href="http://www.kaia-health.com">
               <img src="images/winners/kaia.jpg" class="img-responsive" alt="" />
@@ -272,10 +439,38 @@
       </div>
       <div class="row">
         <img class="col-md-6 col-md-offset-3 col-sm-12 col-xs-12" src="images/partner/hubertburdamedia.png"/>
+        <img class="col-md-2 col-md-offset-4 col-sm-12 col-xs-12" src="images/partner/startupcon.png"/>
+        <img class="col-md-2 col-sm-12 col-xs-12" src="images/partner/fol.png"/>
       </div>
     </div>
   </section>
-  <img class="pre-footer" src="images/footer_background.svg"/>
+  <section class="pre-footer">
+    <!--<div class="headline hidden-sm hidden-xs">STARTUP DAY'N'NITE</div>-->
+    <div class="countdown hidden-sm hidden-xs">
+      <h1 id="countdown"></h1>
+      <script type="text/javascript">
+        $("#countdown")
+            .countdown("2017/09/13", function(event) {
+                $(this).text(
+                    "test"
+                );
+                this.innerHTML = event.strftime('%D') + "<b>days</b>&nbsp;&nbsp;&nbsp;" + event.strftime('%H') + "<b>h</b>&nbsp;&nbsp;&nbsp;" + event.strftime('%M') + "<b>min</b>&nbsp;&nbsp;&nbsp;" + event.strftime('%S') +
+                    "<b>s</b>"
+            });
+      </script>
+      <a target="_blank" onclick="startupLead()" href="https://goo.gl/forms/iQ4ZKQ0pfWqZEmVh2">
+        <div class="btn">
+          STARTUPS: APPLY NOW TO PITCH
+        </div>
+      </a>
+      <a target="_blank" onclick="visitorLead()" href="https://burdabootcamp.typeform.com/to/nY42IM">
+        <div class="btn">
+          VISITORS: APPLY FOR FREE TICKET!
+        </div>
+      </a>
+    </div>
+    <img src="images/footer_background.svg"/>
+  </section>
   <div class="footer">
     <div class="social-wrapper">
       <a target="_blank" href="https://www.facebook.com/burdabootcamp/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
