@@ -164,6 +164,7 @@ section.speaker {
   section.speaker .row {
     margin-top: 50px; }
     section.speaker .row .speaker-box {
+      min-height: 350px;
       padding-bottom: 20px; }
       section.speaker .row .speaker-box img {
         width: 60%;
@@ -221,7 +222,8 @@ section.jury {
     font-family: 'TWS Savory Regular';
     margin-bottom: 50px; }
   section.jury .jury-box {
-    padding-bottom: 20px; }
+    padding-bottom: 20px;
+    min-height: 350px; }
     section.jury .jury-box img {
       width: 60%;
       padding-bottom: 10px; }
