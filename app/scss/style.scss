@@ -138,9 +138,6 @@ section.application {
     bottom: 5%;
     margin-bottom: 0px;
   }
-  @-moz-document url-prefix() {
-    margin-top: 100vh;
-  }
   .btn {
     margin-top: 20px;
     color: $grey;
@@ -153,6 +150,14 @@ section.application {
     padding-top: 20px;
     padding-bottom: 20px;
     border-radius: 0px;
+  }
+}
+
+section.deadline {
+  font-size: 30px;
+  color: $blue;
+  @-moz-document url-prefix() {
+    margin-top: 100vh;
   }
 }
 

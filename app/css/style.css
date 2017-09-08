@@ -117,10 +117,6 @@ section.application {
     position: absolute;
     bottom: 5%;
     margin-bottom: 0px; }
-
-@-moz-document url-prefix() {
-  section.application {
-    margin-top: 100vh; } }
   section.application .btn {
     margin-top: 20px;
     color: #F0F3F5;
@@ -133,6 +129,14 @@ section.application {
     padding-top: 20px;
     padding-bottom: 20px;
     border-radius: 0px; }
+
+section.deadline {
+  font-size: 30px;
+  color: #2D6783; }
+
+@-moz-document url-prefix() {
+  section.deadline {
+    margin-top: 100vh; } }
 
 section.info {
   color: #2D6783; }
