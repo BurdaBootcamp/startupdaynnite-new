@@ -337,6 +337,19 @@ section.partner {
   section.partner .row {
     margin-top: 50px; }
 
+section.media-partner {
+  margin-top: 150px;
+  color: #2D6783; }
+  section.media-partner .headline {
+    text-transform: uppercase;
+    margin-top: 50px;
+    font-size: 30px;
+    letter-spacing: 0;
+    font-family: 'TWS Savory Regular';
+    font-weight: 400; }
+  section.media-partner .row {
+    margin-top: 50px; }
+
 section.pre-footer {
   width: 100%;
   margin-top: 150px;
