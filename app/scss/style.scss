@@ -92,7 +92,7 @@ h2,h3,h4,h5{
       }
     }
     div.timedate {
-      bottom: 40%;
+      bottom: 35%;
       font-size: 32px;
       font-family: 'TWS Savory Thin';
       color: $grey;
@@ -103,7 +103,7 @@ h2,h3,h4,h5{
       text-align: center;
       @media(max-width: $breakpoint-splash) {
         font-size: 24px;
-        bottom: 35%;
+        bottom: 30%;
         width: 80%;
         right:10%;
         left:10%;
@@ -196,7 +196,12 @@ section.speaker {
   .row {
     margin-top: 50px;
     .speaker-box {
-      min-height: 350px;
+      &.col-md-4{
+        min-height: 400px;
+      }
+      &.col-md-3{
+        min-height: 350px;
+      }
       padding-bottom: 20px;
       img {
         width: 60%;

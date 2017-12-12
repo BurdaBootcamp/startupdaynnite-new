@@ -76,7 +76,7 @@ h2, h3, h4, h5 {
           right: 10%;
           left: 10%; } }
     .splash .element div.timedate {
-      bottom: 40%;
+      bottom: 35%;
       font-size: 32px;
       font-family: 'TWS Savory Thin';
       color: #F0F3F5;
@@ -88,7 +88,7 @@ h2, h3, h4, h5 {
       @media (max-width: 875px) {
         .splash .element div.timedate {
           font-size: 24px;
-          bottom: 35%;
+          bottom: 30%;
           width: 80%;
           right: 10%;
           left: 10%; } }
@@ -168,8 +168,11 @@ section.speaker {
   section.speaker .row {
     margin-top: 50px; }
     section.speaker .row .speaker-box {
-      min-height: 350px;
       padding-bottom: 20px; }
+      section.speaker .row .speaker-box.col-md-4 {
+        min-height: 400px; }
+      section.speaker .row .speaker-box.col-md-3 {
+        min-height: 350px; }
       section.speaker .row .speaker-box img {
         width: 60%;
         padding-bottom: 10px; }
