@@ -13,16 +13,10 @@
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="stylesheet" href="fonts/TWS1/font.css">
-    <link rel="stylesheet" href="fonts/TWS2/font.css">
-    <link rel="stylesheet" href="fonts/TWS3/font.css">
-    <link rel="stylesheet" href="fonts/TWS4/font.css">
 
 
     <script src="js/jquery-1.12.0.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/countdown.js"></script>
-    <!-- Latest compiled and minified JavaScript -->
 
     <meta property="og:url" content="http://startupdaynnite.de/" />
     <meta property="og:image" content="http://startupdaynnite.de/images/seo/banner18_2.jpg" />
@@ -76,874 +70,317 @@
 
 
 <body>
-  <div class="splash">
-    <div class="layer sky"></div>
-    <div class="layer element">
-      <img class="header-icon" src="images/splashscreen_header_icon.svg" style="">
-      <img class="headline" src="images/splashscreen_headline.png" style="">
-      <div class="timedate">
-        Jan 20, 2018, Munich <br />
-        10am - open end
+  <header>
+    <nav class="header-nav">
+      <img class="logo" />
+      <ul>
+        <li>
+          Speaker
+        </li>
+        <li>
+          Agenda
+        </li>
+      </ul>
+    </nav>
+    <div class="content container">
+      <div class="headline-wrapper">
+        <span>
+          Inspiration for<br />
+          founders
+        </span>
       </div>
-      <div class="description">
-        More than ten hours of short & sweet talks,<br />
-        startup pitches and networking.
+      <div class="date-wrapper">
+        <span>
+          January 20 2018 | Burda Bootcamp <br />
+          10am - open end
+        </span>
       </div>
-    </div>
-    <div class="layer bottom">
-      <!--<img src="images/splashscreen_arrow.svg" onclick="scroll('we-prototype')">-->
-      <section class="application mob hidden-xs hidden-sm">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-4 col-md-offset-2">
-              <a target="_blank" onclick="startupLead()" href="https://burdabootcamp.typeform.com/to/wRp4bu">
-                <div class="btn">
-                  STARTUPS: APPLY NOW TO PITCH
-                </div>
-              </a>
-            </div>
-            <div class="col-md-4">
-              <a target="_blank" onclick="visitorLead()" href="https://burdabootcamp.typeform.com/to/i7gNKM">
-                <div class="btn">
-                  VISITORS: APPLY FOR FREE TICKET!
-                </div>
-              </a>
-            </div>
-            <div class="col-md-4 col-md-offset-4" style="display:none">
-              <a target="_blank" href="http://eepurl.com/ceY0Xz">
-                <div class="btn">
-                  SIGN UP FOR THE NEWSLETTER
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
-  </div>
-  <section class="application hidden-md hidden-lg">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 col-md-offset-2">
-          <a target="_blank" onclick="startupLead()" href="https://burdabootcamp.typeform.com/to/wRp4bu">
-            <div class="btn">
-              STARTUPS: APPLY NOW TO PITCH
-            </div>
-          </a>
-        </div>
-        <div class="col-md-4 col-md-offset-4">
-          <a target="_blank" onclick="visitorLead()" href="https://burdabootcamp.typeform.com/to/i7gNKM">
-            <div class="btn">
-              VISITORS: APPLY FOR FREE TICKET!
-            </div>
-          </a>
-        </div>
-        <div class="col-md-4 col-md-offset-4" style="display:none">
-          <a target="_blank" href="http://eepurl.com/ceY0Xz">
-            <div class="btn">
-              SIGN UP FOR THE NEWSLETTER
-            </div>
-          </a>
-        </div>
+      <div class="claim-wrapper">
+        More than ten hours of short and sweet <br />
+        talks, startup pitches and networking
       </div>
-    </div>
-  </section>
-  <section class="deadline">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 col-md-offset-3" style="display:none;">
-          Applications will be open soon! You can sign up for the newsletter to stay tuned & follow us on <a href="https://www.facebook.com/burdabootcamp/">Facebook</a>, <a href="https://www.instagram.com/burdabootcamp/">Instagram</a> & <a href="https://twitter.com/burdabootcamp/">Twitter</a>!
-        </div>
-        <div class="col-md-6 col-md-offset-3">
-          Application deadline 10.01.2018
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="info">
-    <div class="container">
-      <img src="images/info_header_icon.svg"/>
-      <div class="headline">
-        Jan 20, 2018, Munich
-      </div>
-      <div class="description">
-        Startup Day’n’Nite is the first invite-only conference by Burda Bootcamp for founders and investors to learn from each other, network and grill together!
-      </div>
-    </div>
-  </section>
-  <section class="speaker">
-    <div class="container">
-      <img src="images/speaker_header_icon.svg"/>
-      <div class="headline">
-        Meet the speakers
-      </div>
-      <div class="row">
-        <div class="col-md-4 speaker-box">
-          <img class="img-circle" src="images/speaker/Michael_Brehm.jpeg"/>
-          <div class="name">
-            Michael Brehm
-          </div>
-          <div class="description">
-            Partner, Redstone Digital<br />
-            Founder of StudiVZ
-          </div>
-        </div>
-        <div class="col-md-4 speaker-box">
-          <img class="img-circle" src="images/speaker/Patricia_Riekel.jpeg"/>
-          <div class="name">
-            Patricia Riekel
-          </div>
-          <div class="description">
-             Publisher, Bunte
-          </div>
-        </div>
-        <div class="col-md-offset- col-md-4 speaker-box">
-          <img class="img-circle" src="images/prev_speaker/stefficzerny.jpg"/>
-          <div class="name">
-            Steffi Czerny
-          </div>
-          <div class="description">
-             Managing Director, DLD Media
-          </div>
-        </div>
-        <div class="col-md-4 speaker-box">
-          <img class="img-circle" src="images/speaker/Thomas_Bachem.jpeg"/>
-          <div class="name">
-            Thomas Bachem
-          </div>
-          <div class="description">
-            Chancellor, Code University
-          </div>
-        </div>
-        <div class="col-md-4 speaker-box">
-          <img class="img-circle" src="images/speaker/Marc_Al_Hames.jpeg"/>
-          <div class="name">
-            Marc Al-Hamnes
-          </div>
-          <div class="description">
-            CEO, Cliqz
-          </div>
-        </div>
-        <div class="col-md-4 speaker-box">
-          <img class="img-circle" src="images/speaker/Jennifer_Lachmann.jpeg"/>
-          <div class="name">
-            Jennifer Lachmann
-          </div>
-          <div class="description">
-            Editor-in-chief, Xing News
-          </div>
-        </div>
-
-        <div class="col-md-4 speaker-box">
-          <img class="img-circle" src="images/speaker/Frederik_Brantner.jpeg"/>
-          <div class="name">
-            Frederik Brantner
-          </div>
-          <div class="description">
-            Founder, Magazino
-          </div>
-        </div>
-        <div class="col-md-4 speaker-box">
-          <img class="img-circle" src="images/speaker/Hanno_Renner.jpeg"/>
-          <div class="name">
-            Hanno Renner
-          </div>
-          <div class="description">
-            Founder, Personio
-          </div>
-        </div>
-        <div class="col-md-4 speaker-box">
-          <img class="img-circle" src="images/speaker/Benedikt_Böckenförde.jpeg"/>
-          <div class="name">
-            Benedikt Böckenförde
-          </div>
-          <div class="description">
-            Founder, Visual Statements
-          </div>
-        </div>
-        <div class="col-md-4 speaker-box">
-          <img class="img-circle" src="images/speaker/Johann_Romefort.jpeg"/>
-          <div class="name">
-            Johann Romefort
-          </div>
-          <div class="description">
-            Tech Evangelist, Stylight
-          </div>
-        </div>
-        <div class="col-md-4 speaker-box">
-          <img class="img-circle" src="images/speaker/Yana_Lapitskaya.jpeg"/>
-          <div class="name">
-            Yana Lapitskaya
-          </div>
-          <div class="description">
-            Founder, Yay!Starter
-          </div>
-        </div>
-        <div class="col-md-4 speaker-box">
-          <img class="img-circle" src="images/speaker/Philine_Lietzmann.jpeg"/>
-          <div class="name">
-            Philine Lietzmann
-          </div>
-          <div class="description">
-            Redakteurin, Focus Online
-          </div>
-        </div>
-        <div class="col-md-4 speaker-box">
-          <img class="img-circle" src="images/speaker/Jenny_Mueller.jpeg"/>
-          <div class="name">
-            Dr. Jenny Müller
-          </div>
-          <div class="description">
-            Founder, Die Frischemanufaktur
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="speaker">
-    <div class="container">
-      <img src="images/speaker_header_icon.svg"/>
-      <div class="headline">
-        Meet the previous speakers
-      </div>
-      <div class="row">
-        <div class="col-md-offset- col-md-3 speaker-box">
-          <img class="img-circle" src="images/prev_speaker/paulkallen.jpg"/>
-          <div class="name">
-            Dr. Paul-Bernhard Kallen
-          </div>
-          <div class="description">
-             CEO, Hubert Burda Media
-          </div>
-        </div>
-        <div class="col-md-offset- col-md-3 speaker-box">
-          <img class="img-circle" src="images/prev_speaker/dominikwichmann.png"/>
-          <div class="name">
-            Dominik Wichmann
-          </div>
-          <div class="description">
-             Founder, Looping Group
-          </div>
-        </div>
-        <div class="col-md-offset- col-md-3 speaker-box">
-          <img class="img-circle" src="images/prev_speaker/judithwilliams.jpg"/>
-          <div class="name">
-            <a target="_blank" href="https://www.judithwilliams.de/">Judith Williams</a>
-          </div>
-          <div class="description">
-             Investor, Höhle der Löwen (VOX)
-          </div>
-        </div>
-        <div class="col-md-offset- col-md-3 speaker-box">
-          <img class="img-circle" src="images/prev_speaker/stefficzerny.jpg"/>
-          <div class="name">
-            Steffi Czerny
-          </div>
-          <div class="description">
-             Managing Director, DLD
-          </div>
-        </div>
-        <div class="col-md-3 speaker-box">
-          <img class="img-circle" src="images/prev_speaker/littlelunch.jpg"/>
-          <div class="name">
-            Denis & Daniel Gibisch
-          </div>
-          <div class="description">
-            Founders, <a href="https://littlelunch.de/" target="_blank">Little Lunch</a>
-          </div>
-        </div>
-        <div class="col-md-3 speaker-box">
-          <img class="img-circle" src="images/prev_speaker/felixkopke.jpg"/>
-          <div class="name">
-            Felix Kopke
-          </div>
-          <div class="description">
-             Founder, <a target="_blank" href="https://ohlala-fashion.com/">Ohlala</a>
-          </div>
-        </div>
-        <div class="col-md-3 speaker-box">
-          <img class="img-circle" src="images/prev_speaker/alexmueller.jpg"/>
-          <div class="name">
-            Marc Alexander Müller
-          </div>
-          <div class="description">
-             Founder, <a target="_blank" href="https://ohlala-fashion.com/">Ohlala</a>
-          </div>
-        </div>
-        <div class="col-md-3 speaker-box">
-          <img class="img-circle" src="images/prev_speaker/clemensvonhoyos.jpg"/>
-          <div class="name">
-            <a target="_blank" href="https://vonhoyos.de/">Clemens <br /> Graf von Hoyos</a>
-          </div>
-          <div class="description">
-             Chairman, German Knigge Society
-          </div>
-        </div>
-        <div class="col-md-3 speaker-box">
-          <img class="img-circle" src="images/prev_speaker/hannahklose.jpg"/>
-          <div class="name">
-            <a target="_blank" href="https://www.linkedin.com/in/hannahklose/">Hannah Klose</a>
-          </div>
-          <div class="description">
-             Event Host
-          </div>
-        </div>
-        <div class="col-md-3 speaker-box">
-          <img class="img-circle" src="images/prev_speaker/chrisheadshot.jpg"/>
-          <div class="name">
-            Christian Velbinger
-          </div>
-          <div class="description">
-            Managing Director and Monkey #1, <br />
-            <a href="http://www.theroyaljungle.com/">The Royal Jungle</a>
-          </div>
-        </div>
-        <div class="col-md-3 speaker-box">
-          <img class="img-circle" src="images/prev_speaker/grillido.jpg"/>
-          <div class="name">
-             Michael Ziegler & Manuel Stöffler
-          </div>
-          <div class="description">
-            Founders, <br />
-            <a href="http://www.grillido.com/">Grillido</a>
-          </div>
-        </div>
-        <div class="col-md-3 speaker-box">
-          <img class="img-circle" src="images/prev_speaker/carolinhenseler.png"/>
-          <div class="name">
-             Carolin Henseler
-          </div>
-          <div class="description">
-            Moderator
-          </div>
-        </div>
-        <div class="col-md-3 speaker-box">
-          <img class="img-circle" src="images/prev_speaker/svengoblirsch.jpg"/>
-          <div class="name">
-             Sven Goblirsch
-          </div>
-          <div class="description">
-            Moderator
-          </div>
-        </div>
-        <div class="col-md-3 speaker-box">
-          <img class="img-circle" src="images/prev_speaker/martinploeckl.jpg"/>
-          <div class="name">
-             Martin Plöckl
-          </div>
-          <div class="description">
-            Moderator
-          </div>
-        </div>
-        <div class="col-md-3 speaker-box">
-          <img class="img-circle" src="images/prev_speaker/dariasaharova.jpg"/>
-          <div class="name">
-            Daria Saharova
-          </div>
-          <div class="description">
-             Partner, Vito One
-          </div>
-        </div>
-        <div class="col-md-3 speaker-box">
-          <img class="img-circle" src="images/prev_speaker/josefseidl.png"/>
-          <div class="name">
-            Josef Seidl
-          </div>
-          <div class="description">
-            Founder,
-            <a href="http://innospot.de/">INNOSPOT</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!--START TIMELINE
-  <section class="timeline">
-    <div class="container">
-      <img src="images/timeline_header_icon.svg"/>
-      <div class="headline">
-        Learn from the best
-      </div>
-      <div class="row">
-        <img class="hidden-xs" src="images/timeline_timeline.png"/>
-        <img class="hidden-sm hidden-md hidden-lg" src="images/timeline_timeline_xs.png"/>
-        <div class="container">
-          <div class="row">
-            <div class="col-md-offset-4 col-md-4" style="display:none;">
-              <a target="_blank" onclick="visitorLead()" href="https://burdabootcamp.typeform.com/to/qfUWOv">
-                <div class="btn">
-                  VISITORS: APPLY FOR FREE TICKET!
-                </div>
-              </a>
-            </div>
-            <div class="col-md-4 col-md-offset-4">
-              <a target="_blank" href="http://eepurl.com/ceY0Xz">
-                <div class="btn">
-                  SIGN UP FOR THE NEWSLETTER
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  END TIMELINE -->
-  <section class="startupnite">
-    <div class="container">
-      <img src="images/startupnight_logo.png"/>
-      <div class="description">
-        Startup Night @Burda Bootcamp is back - pitch your startup and <br />
-        win free <b>office space</b>, <b>mentoring</b>, <b>conference tickets</b> and <b>access to the network</b> of <br />
-        Hubert Burda Media, one of Germany’s biggest media houses. We <br />
-        focus on b2c startups who have validated the market and created <br />
-        the first MVP.<br />
-        <br />
-        Application  starts <b>soon</b>.
-      </div>
-      <div class="row benefits">
-        <div class="col-md-3 col-md-offset- ">
-          <div class="icon">
-            <img src="images/icons/icon_superoffice.svg" alt="" />
-          </div>
-          <br>
-          <br>
-          <b>Free Coworking Space</b>
-          <p>
-            Work at an awesome location in Munich with other startups
-          </p>
-        </div>
-
-        <div class="col-md-3 col-md-offset- ">
-          <div class="icon">
-            <img src="images/icons/icon_networking.svg" alt="" />
-          </div>
-          <br>
-          <br>
-          <b>Network</b>
-          <p>
-            Get access to Burda’s network & business development opportunities
-          </p>
-        </div>
-        <div class="col-md-3 col-md-offset-">
-          <div class="icon">
-            <img src="images/icons/icon_mentoring.svg" alt="" />
-          </div>
-          <br>
-          <br>
-          <b>Mentoring</b>
-          <p>
-            Get feedback for business development, product, marketing & strategy
-          </p>
-        </div>
-        <div class="col-md-3 col-md-offset-">
-          <div class="icon">
-            <img style="width: 35%;" src="images/icons/icon_tickets.png" alt="" />
-          </div>
-          <br>
-          <br>
-          <b>Conference Tickets</b>
-          <p>
-            Tickets to DLD Berlin, Slush, Startup Con (+ free booth), The Royal Jungle
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="jury">
-    <div class="container">
-      <img src="images/jury_header_icon.svg"/>
-      <div class="headline">
-        Meet our previous jury
-      </div>
-      <div class="row">
-        <div class="col-md-4 jury-box">
-          <img class="img-circle" src="images/jury/mariestephan.jpg"/>
-          <div class="name">
-            Marie Stephan
-          </div>
-          <div class="description">
-             Director M & A, Hubert Burda Media
-          </div>
-        </div>
-        <!--<div class="col-md-4 jury-box">
-          <img class="img-circle" src="images/jury/mariakaltenegger.jpg"/>
-          <div class="name">
-            Maria Kaltenegger
-          </div>
-          <div class="description">
-             Partner, KPMG
-          </div>
-        </div>-->
-        <div class="col-md-4 jury-box">
-          <img class="img-circle" src="images/jury/thomashetmann.png"/>
-          <div class="name">
-            Thomas Hetmann
-          </div>
-          <div class="description">
-             Geschäftsführer, CoInvest
-          </div>
-        </div>
-        <div class="col-md-4 jury-box">
-          <img class="img-circle" src="images/jury/thimovschmittlord.jpg"/>
-          <div class="name">
-            Thimo V. Schmitt-Lord
-          </div>
-          <div class="description">
-            CEO, Bayer Foundations
-          </div>
-        </div>
-        <div class="col-md-4 jury-box">
-          <img class="img-circle" src="images/jury/florianmann.jpg"/>
-          <div class="name">
-            Dr. Florian Mann
-          </div>
-          <div class="description">
-             Geschäftsführer, Werk1
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="qanda">
-    <div class="headline">Q&A</div>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <b>Where and when?</b>
-          <p>Pitches start at 8pm and will be done at about 10pm after which you will have the opportunity to network and socialize.
-          </p>
-        </div>
-        <div class="col-md-6">
-          <b> When does the application period end? </b>
-          <p>
-            You can apply until January, 4th. We will let you know by January 10th, if you have been selected, so that you have enough time to prepare your pitch.
-          </p>
-        </div>
-        <div class="col-md-6">
-          <b> What type of startups are you looking for?  </b>
-          <p>
-            Our main focus are the following areas: Food, Fashion, Beauty, News, Entertainment, Technology, Advertising, Mobile & Social, E-Commerce & Marketplaces.
-          </p>
-        </div>
-        <div class="col-md-6">
-          <b>What do we need to prepare? </b>
-          <p>
-            Just fill out the questionnaire and we will get back to you if we need more information. Selected startups will then have to prepare a 3-min pitchdeck and a small booth for the evening January 20th, 2018.
-          </p>
-        </div>
-        <div class="col-md-6">
-          <b>Do we get any funding?</b>
-          <p>
-            We do not give financial support and don't take any equity, but we help startups to develop their business further by supporting them with free coworking space, mentoring as well as access to the Burda network.
-          </p>
-        </div>
-        <div class="col-md-6">
-          <b>How do you judge the pitches?</b>
-          <p>
-            You have to be awesome!<br /> Apart from that, we will challenge your business model and market potential. We will also pay close attention to the founding team.
-          </p>
-        </div>
-        <!--<div class="col-md-6">
-          <b>Startup Fair before pitches</b>
-          <p>
-            If you have been chosen to pitch, you should prepare a stand for our Startup Fair where you may present your startup to the jury and guests before and after the pitches and also during the break when the jury is discussing their decision. You will have a table available (Size: 1,40m/0,60m) and can get creative with the set up!            </p>
-        </div>-->
-        <div class="col-md-offset-3 col-md-6">
-          <b> Further questions? </b>
-          <p>
-            Please feel free to contact us anytime! <a href="mailto:startups@burdabootcamp.de">startups@burdabootcamp.de</a>
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="row" style="display:none">
-      <div class="col-sm-6 col-md-6 col-md-offset-3 col-lg-4 col-lg-offset-4">
-        <a target="_blank" onclick="startupLead()" href="https://goo.gl/forms/iQ4ZKQ0pfWqZEmVh2">
-          <div class="btn">
-            STARTUPS: APPLY NOW TO PITCH
-          </div>
+      <div class="button-wrapper">
+        <a>
+          <span class="button">
+            Apply for your free ticket
+          </span>
+        </a>
+        <a>
+          <span class="button">
+            Already applied? Claim your ticket
+          </span>
         </a>
       </div>
     </div>
-  </div>
+  </header>
+  <nav class="floating-nav">
+    <ul>
+      <li>
+        Speaker
+      </li>
+      <li>
+        Agenda
+      </li>
+    </ul>
+  </nav>
+  <section class="description-wrapper">
+    <div class="row">
+      <div class="col-md-6 image-wrapper"></div>
+      <div class="col-md-6 text-wrapper">
+        <div class="headline-wrapper">
+          The most inntimate startup conference in Germany
+        </div>
+        <div class="body-wrapper">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+        <div class="detail-wrapper">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+        <div class="button-wrapper">
+          <a>
+            <span class="button">
+              Claim your ticket
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
   </section>
-  <section class="winners">
+  <section class="speaker container">
+    <div class="section-headline-wrapper">
+      <span>Speaker</span>
+    </div>
+    <div id="speaker-list" class="row">
+      <div class="col-md-3">
+        <div class="speaker-wrapper">
+          <img class="portrait" src="images/speaker/Marc_Al_Hames.png"/>
+          <div class="description">
+            <span class="name">Marc Al Hames</span><br />
+            <span class="role">CEO, Cliqz</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="speaker-wrapper">
+          <img class="portrait" src="images/speaker/Marc_Al_Hames.png"/>
+          <div class="description">
+            <span class="name">Marc Al Hames</span><br />
+            <span class="role">CEO, Cliqz</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="speaker-detail">
+      <img class="portrait" src="images/speaker/Marc_Al_Hames.png"/>
+      <div class="content">
+        <span class="name">Marc Al Hames</span>
+        <span class="role">CEO</span>
+        <span class="company">Cliqz</span>
+        <p class="description">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+      <div style="clear: both"></div>
+    </div>
+  </section>
+  <section class="speaker container">
+    <div class="section-headline-wrapper">
+      <span>Previous Speaker</span>
+    </div>
     <div class="container">
-      <img class="header" src="images/winners_header_icon.svg"/>
-      <div class="headline">
-        Meet our previous winners
-      </div>
       <div class="row">
-        <div class="col-sm-6 col-md-4 col-md-offset-2 col-lg-offset-2 col-lg-4 col-sm-6" style="display: none">
-          <div class="box">
-            <a target="_blank" href="http://www.smokeless.world/">
-              <img src="images/winners/smokeless.jpg" class="img-responsive" alt="" />
-            </a>
-            <br>
-            <p>
-              <a target="_blank" href="http://www.smokeless.world/">Smokeless</a>
-              has developed the first technical solution to conquer smoking addiction. By using smart technology we combine all necessary components of smoking addiction and offer 100% tailor made plans which work fully automated without any effort of the customer.
-            </p>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4 col-md-offset-1 col-lg-offset-1 col-lg-4 col-sm-6">
-          <div class="box">
-            <a target="_blank" href="https://diefrischemanufaktur.de/">
-              <img src="images/winners/fruit2go.jpg" class="img-responsive" alt="" />
-            </a>
-            <br>
-            <p>
-              <a target="_blank" href="https://diefrischemanufaktur.de/">Fruit2Go</a> introduces Germany's first national Life Style brand for fresh-cut fruits. Consistant premium quality is secured through state-of-the-art food technology like modified atmosphere packaging and vitamin C coating. Sales are generated through supermarkets, food delivery, system gastronomy and online webpage.
-            </p>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4 col-md-offset-2 col-lg-offset-2 col-lg-4 col-sm-6">
-          <div class="box">
-            <a target="_blank" href="http://www.jobninja.eu/">
-              <img src="images/winners/jobninja.jpg" class="img-responsive" alt="" />
-            </a>
-            <br>
-            <p>
-              <a href="http://www.jobninja.eu/">JobNinja</a>
-              is the simplest and fastest recruiting platform ever conceived: if you know how to use Tinder, then you’re already familiar with JobNinja! We focus on unqualified jobs which do not require a formal CV.
-            </p>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-offset-1 col-lg-offset-1 col-md-4 col-lg-4 col-sm-6">
-          <div class="box">
-            <a target="_blank" href="http://www.baristina.com/">
-              <img src="images/winners/baristina.jpg" class="img-responsive" alt="" />
-            </a>
-            <br>
-            <p>
-              <a target="_blank" href="http://www.baristina.com/">baristina</a>
-              developed an innovation in the beverage sector: freshly brewed espresso out of a one-way can. We transfer the brewing process of a portafilter espresso machine into a can (heat by chemical reaction, pre-loaded pressure).
-            </p>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4 col-md-offset-2 col-lg-offset-2 col-lg-4 col-sm-6">
-          <div class="box">
-            <a target="_blank" href="http://www.kaia-health.com">
-              <img src="images/winners/kaia.jpg" class="img-responsive" alt="" />
-            </a>
-            <br>
-            <p>
-              <a target="_blank" href="http://www.kaia-health.com">kaia health</a>
-              is an App that helps people overcome chronic back pain. We do so by developing an artificial intelligence that is fed by leading clinical findings to customize a self-help program              in the App. Patients also get a real coach in the App.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="partner">
-    <div class="container">
-      <img src="images/partner_header_icon.svg"/>
-      <div class="headline">
-        Meet our partners
-      </div>
-      <div class="row">
-        <img class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12" src="images/partner/hubertburdamedia.png"/>
-        <a target="_blank" href="http://www.kpmg.de/"><img class="col-md-4 col-sm-12 col-xs-12" src="images/partner/kpmg.png" style=""/></a>
-        <a target="_blank" href="https://coinvest.de/wp/"><img class="col-md-4 col-sm-12 col-xs-12" src="images/partner/CoInvest.png" style="padding: 35px"/></a>
-        <a target="_blank" href="http://www.bayer-foundations.com/"><img class="col-md-4 col-sm-12 col-xs-12" src="images/partner/bayerfoundation.png" style="padding-top: 40px; padding-bottom: 40px;"/></a>
-        <a target="_blank" href="http://www.startupcon.de/"><img class="col-md-4 col-sm-12 col-xs-12" src="images/partner/startupcon.png" style="padding-top: 90px;" /></a>
-        <a target="_blank" href="http://dld-conference.com/"><img class="col-md-4 col-sm-12 col-xs-12" src="images/partner/DLD.png" style="padding-top: 80px; padding-bottom: 60px; padding-left: 40px; padding-right: 40px;"/></a>
-        <a target="_blank" href="http://www.theroyaljungle.com/"><img class="col-md-4 col-sm-12 col-xs-12" src="images/partner/TRJ.png" style="padding-bottom: 50px;"/></a>
-        <a target="_blank" href="https://littlelunch.de/"><img class="col-md-4 col-sm-12 col-xs-12" src="images/partner/littlelunch.png" style="padding-top:30px; padding-left: 90px; padding-right: 90px; padding-bottom: 80px"/></a>
-        <a target="_blank" href="https://www.grillido.de/"><img class="col-md-4 col-sm-12 col-xs-12" src="images/partner/grillido.png" style="padding-top:30px; padding-left: 90px; padding-right: 90px; padding-bottom: 80px"/></a>
-        <a target="_blank" href="http://www.vodrock.com/"><img class="col-md-4 col-sm-12 col-xs-12" src="images/partner/vodrock.png" style="padding-top:50px; padding-left: 50px; padding-right: 50px; padding-bottom: 110px"/></a>
-        <a target="_blank" href="http://innospot.de/"><img class="col-md-4 col-sm-12 col-xs-12" src="images/partner/innospot.png" style="padding-top:160px; padding-bottom:140px"/></a>
-        <a target="_blank" href="http://gruenderpokern.de/"><img class="col-md-4 col-sm-12 col-xs-12" src="images/partner/gruenderpokern.png" style="padding-top:0px;"/></a>
-      </div>
-    </div>
-  </section>
-  <section class="media-partner">
-    <div class="container">
-      <div class="headline">
-        Our media partners
-      </div>
-      <div class="row">
-        <a target="_blank" href="http://bunte.de/"><img class="col-md-4 col-sm-12 col-xs-12" src="images/partner/bunte_de.png" style="padding-top:20px; padding-bottom:180px; padding-left: 30px; padding-right: 30px;"/></a>
-        <a target="_blank" href="http://www.munich-startup.de/"><img class="col-md-4 col-sm-12 col-xs-12" src="images/partner/munichstartup.png" style="padding-top:20px; padding-bottom:125px"/></a>
-        <a target="_blank" href="https://berlinvalley.com/"><img class="col-md-4 col-sm-12 col-xs-12" src="images/partner/berlinvalley.png" style="padding-top:20px; padding-bottom:150px; padding-left:50px; padding-right:50px;"/></a>
-        <a target="_blank" href="http://missionmoney.de/"><img class="col-md-4 col-sm-12 col-xs-12" src="images/partner/missionmoney.png" style="padding-top:20px; padding-bottom:180px"/></a>
-      </div>
-    </div>
-  </section>
-  <section class="pre-footer">
-    <!--<div class="headline hidden-sm hidden-xs">STARTUP DAY'N'NITE</div>-->
-    <div class="countdown hidden-sm hidden-xs">
-      <h1 id="countdown"></h1>
-      <script type="text/javascript">
-        $("#countdown")
-            .countdown("2018/01/20", function(event) {
-                $(this).text(
-                    "test"
-                );
-                this.innerHTML = event.strftime('%D') + "<b>days</b>&nbsp;&nbsp;&nbsp;" + event.strftime('%H') + "<b>h</b>&nbsp;&nbsp;&nbsp;" + event.strftime('%M') + "<b>min</b>&nbsp;&nbsp;&nbsp;" + event.strftime('%S') +
-                    "<b>s</b>"
-            });
-      </script>
-      <a target="_blank" onclick="startupLead()" href="https://burdabootcamp.typeform.com/to/wRp4bu">
-        <div class="btn">
-          STARTUPS: APPLY NOW TO PITCH
-        </div>
-      </a>
-      <a target="_blank" onclick="visitorLead()" href="https://burdabootcamp.typeform.com/to/i7gNKM">
-        <div class="btn">
-          VISITORS: APPLY FOR FREE TICKET!
-        </div>
-      </a>
-      <a target="_blank" href="http://eepurl.com/ceY0Xz" style="display:none;">
-        <div class="btn">
-          SIGN UP FOR THE NEWSLETTER
-        </div>
-      </a>
-    </div>
-    <img src="images/footer_background.svg"/>
-  </section>
-  <div class="footer">
-    <div class="social-wrapper">
-      <a target="_blank" href="https://www.facebook.com/burdabootcamp/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-      <a target="_blank" href="https://twitter.com/burdabootcamp/"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-      <a href="mailto:startupdaynnite@burdabootcamp.de"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
-    </div>
-    <div class="contact">
-      <a data-toggle="modal" data-target="#myModal">CONTACT & IMPRINT</a>
-    </div>
-  </div>
-
-  <div id="myModal" class="modal fade" role="dialog">
-        <div class="modal-dialog" style="padding-top:px;z-index:6">
-
-            <!-- Modal content-->
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">IMPRINT</h4>
+        <div class="col-md-12">
+          <div class="carousel slide multi-item-carousel" id="prev_speaker_carousel">
+            <div class="carousel-inner" id="prev_speaker_list">
+              <div class="item active">
+                <div class="col-xs-4">
+                  <div class="speaker-wrapper">
+                    <img class="portrait" src="images/speaker/Marc_Al_Hames.png"/>
+                    <div class="description">
+                      <span class="name">Marc Al Hames1</span><br />
+                      <span class="role">CEO, Cliqz</span>
+                    </div>
+                  </div>
                 </div>
-                <div class="modal-body">
-                    <p>
-                        <h1>IMPRINT</h1>
-                        <p>Die Website www.startupdaynnite.de ist ein Angebot der Hubert Burda Media Holding Kommanditgesellschaft.</p>
-                        <p>Hubert Burda Media Holding Kommanditgesellschaft<br /> Hauptstr. 130, 77652 Offenburg<br /> Telefon +49 89 9250-3140<br /> Fax +49 89 9250-3997<br /> E-Mail: info@hubert-burda-media.com</p>
-                        <p>Handelsregister: Amtsgericht Freiburg i. Br. HRA 471250<br /> Vertretungsberechtigte Komplementärin: Hubert Burda Media Holding Geschäftsführungs-GmbH<br /> Geschäftsführer: Holger Eckstein, Dr. Paul-Bernhard Kallen (Vorsitzender),
-                            Dr. Andreas Rittstieg, Philipp Welte, Stefan Winners<br /> Hauptstr. 130, 77652 Offenburg<br /> Handelsregister: Amtsgericht Freiburg i. Br. HRB 470692</p>
-                        <p>Verantwortlich i. S. v. § 55 Abs. 2 RStV: Natalia Karbasova (Anschrift wie oben)</p>
-                        <p>© Hubert Burda Media Holding Kommanditgesellschaft, Offenburg 2014. Alle Rechte vorbehalten.</p>
-                        <p>Programmierer: Patrick Müller<br /> Designer: Daniel Seiler<br />
-                        </p>
-                        <p>&nbsp;</p>
-                        <h3>Datenschutzerklärung für die Webseite www.startupdaynnite.de</h3>
-                        <p>www.startupdaynnite.de ist eine Produktion der Hubert Burda Media Holding Kommanditgesellschaft.</p>
-                        <p>Wir, die Hubert Burda Media Holding Kommanditgesellschaft, als die Verantwortliche Stelle, nehmen den Schutz Ihrer Daten sehr ernst. Wir möchten, dass Sie wissen, welche Daten wir speichern und wie wir diese verwenden. Selbstverständlich
-                            halten wir dabei die gesetzlichen Bestimmungen zum Datenschutz, insbesondere das Bundesdatenschutzgesetz (BDSG) sowie das Telemediengesetz (TMG), strikt ein.</p>
-                        <p><strong>Personenbezogene Daten</strong></p>
-                        <p>Personenbezogene Daten werden von uns nur gemäß diesen Bestimmungen verarbeitet. Nachfolgend informieren wir Sie über die Erhebung und Verwendung Ihrer personenbezogener Daten.</p>
-                        <p>Diese Datenschutzerklärung bezieht sich auf unsere Webseite <strong>www.startupdaynnite.de</strong>. Falls Sie über Links auf andere Seiten weitergeleitet werden, informieren Sie sich bitte dort über den jeweiligen Umgang mit Ihren
-                            Daten.</p>
-                        <p>Personenbezogene Daten sind nach dem Bundesdatenschutzgesetz (BDSG) Einzelangaben über persönliche oder sachliche Verhältnisse einer bestimmten oder bestimmbaren natürlichen Person. D.h., es handelt sich um Informationen, die über
-                            eine Person irgendeine Aussage machen, also z.B. Name, Beruf, Alter, etc.</p>
-                        <p>Nicht hiervon betroffen sind dagegen hinreichend anonymisierte Angaben, die ohne weiteres keiner konkreten Person mehr zugeordnet werden können, zum Beispiel Statistiken über Nutzerverhalten (wie z.B. anonymisierte IP-Adressen).</p>
-                        <p><strong>Erhebung, Verarbeitung und Nutzung personenbezogener Daten</strong></p>
-                        <p>Sie können unsere Seite grundsätzlich besuchen, ohne Angaben zu Ihrer Person zu machen. Wir speichern lediglich Zugriffsdaten ohne Personenbezug wie z.B. den Namen Ihres Internet Service Providers, die Seite, von der aus Sie uns
-                            besuchen oder den Namen der angeforderten Datei, IP-Adresse, Datum und Uhrzeit Ihres Besuchs auf unserer Seite. Diese Daten werden ausschließlich anonymisiert zur Verbesserung unseres Angebotes ausgewertet und erlauben keinen
-                            Rückschluss auf Ihre Person.</p>
-                        <p><strong>Art der Datenerhebung</strong></p>
-                        <p>Die Verantwortliche Stelle fragt Sie immer dann nach Namen, Adresse und weiteren erforderlichen Angaben, wenn Sie Interesse am Bootcamp zeigen. In diesem Fall werden diejenigen personenbezogenen Daten abgefragt, die für eine erste
-                            Kontaktaufnahme erforderlich sind.</p>
-                        <p><strong>Umfang und Zweck der Datenverarbeitung</strong></p>
-                        <p>Umfang und Zweck der Verarbeitung Ihrer personenbezogenen Daten für die jeweils nachfolgend genannte Dienstleistung:</p>
-                        <p>Bei Interesse zur Teilnahme am Bootcamp:</p>
-                        <ul>
-                            <li>Name</li>
-                            <li>E-Mail</li>
-                            <li>Twitter-Handle</li>
-                            <li>Optional: Webseite</li>
-                        </ul>
-                        <p><strong>Datenweitergabe an Dritte</strong></p>
-                        <p>Wir verwenden die von Ihnen mitgeteilten Daten ausschließlich um Kandidaten für das <strong>Bootcamp</strong> zu sichten und soweit nicht eine weitergehende Verwendung durch das Gesetz zugelassen wird oder Sie gesondert einwilligen.
-                            Einer Verwendung Ihrer Daten für Zwecke der Werbung oder der Markt- oder Meinungsforschung können Sie jederzeit widersprechen, z.B. durch eine E-Mail an natalia.karbasova@burda.com oder schriftlich.</p>
-                        <p><strong>Piwik</strong></p>
-                        <p>Diese Webseite benutzt Piwik, eine Open-Source-Software zur statistischen Auswertung der Nutzerzugriffe. Piwik verwendet sog. “Cookies”, Textdateien, die auf dem Computer der Nutzer gespeichert werden und die eine Analyse der Benutzung
-                            der Website durch die Nutzer ermöglichen. Die durch den Cookie erzeugten Informationen über die Benutzung dieses Angebotes werden auf dem Server des Anbieters in Deutschland gespeichert. Die IP-Adresse wird sofort nach der
-                            Verarbeitung und vor deren Speicherung anonymisiert. Nutzer können die Installation der Cookies durch eine entsprechende Einstellung Ihrer Browser-Software verhindern; Der Anbieter weisen die Nutzer jedoch darauf hin, dass
-                            sie in diesem Fall gegebenenfalls nicht sämtliche Funktionen dieser Website vollumfänglich nutzen können.</p>
-                        <p><strong>Durchführung von Webanalyse</strong></p>
-                        <p>Zum Zwecke der Werbung, der Marktforschung oder zur bedarfsgerechten Gestaltung unserer Angebote erstellen wir unter Verwendung von Nutzungsdaten pseudonymisierte Nutzungsprofile. Unter Nutzungsdaten fallen insbesondere Angaben
-                            über Beginn und Ende sowie über den Umfang der jeweiligen Nutzung unserer Seiten und Angebote durch den Käufer. Sie sind berechtigt, dieser Art der Nutzung Ihrer Nutzungsdaten jederzeit schriftlich oder durch eine E-Mail an
-                            natalia.karbasova@burda.com zu widersprechen. Die Nutzungsprofile werden nicht mit Ihren personenbezogenen Daten zusammengeführt</p>
-                        <p><strong>Verwendung von Cookies</strong></p>
-                        <p>Wir verwenden Cookies. Cookies sind kleine Datensätze, die beim Aufruf von Webseiten erzeugt und auf dem Rechner des jeweiligen Nutzers abgelegt werden. Mithilfe von Cookies kann der Webserver benutzerspezifische Informationen
-                            abrufen, die dazu dienen, die Nutzung der Webseite für den Besucher einfacher und bequemer zu gestalten bzw. bestimmte Funktionen überhaupt erst zu ermöglichen.</p>
-                        <p>Sie können Ihren Browser so einstellen, dass Cookies generell abgelehnt werden oder dass Sie die Annahme von Cookies jeweils bestätigen müssen. Entscheiden Sie sich grundsätzlich gegen Cookies, können Sie möglicherweise bestimmte
-                            Funktionen auf der Webseite nicht nutzen. Die Hilfe-Funktion in der Menüleiste der meisten Webbrowser erklärt Ihnen, wie Sie Ihren Browser davon abhalten, neue Cookies zu akzeptieren, wie Ihr Browser Sie darauf hinweisen kann,
-                            wenn Sie ein neues Cookie erhalten oder auch wie Sie sämtliche erhaltenen Cookies ausschalten.</p>
-                        <p>Zusätzlich zu den bereits erwähnten Cookies, die bei Analysediensten (sog. „Webtracking“) eingesetzt werden, setzen wir auf unseren Webseiten auch Cookies der folgenden Klassifizierungen ein, wie z.B.:</p>
-                        <ul>
-                            <li>Session-Cookies:</li>
-                        </ul>
-                        <p>Diese Art von Cookies wird mit Beendigung des Browsers gelöscht, sie haben nur für eine Browsersitzung Gültigkeit.</p>
-                        <ul>
-                            <li>Persistente Cookies:</li>
-                        </ul>
-                        <p>Diese Art von Cookies bleibt dauerhaft (auch nach Beendigung des Browsers) bestehen und speichert bspw. Zugangskennungen.</p>
-                        <ul>
-                            <li>Drittanbieter-Cookies:</li>
-                        </ul>
-                        <p>Diese Art von Cookies wird durch Drittanbieter gesteuert, die z.B. auf einer Internetseite einen Werbebanner einblenden.</p>
-                        <p><strong>Auskunftsrecht</strong></p>
-                        <p>Sie können außerdem Auskunft über die zu Ihrer Person gespeicherten Daten oder zu einem Ihnen gegebenenfalls zugeordneten Pseudonym verlangen.</p>
-                        <p><strong>Widerspruchsmöglichkeiten gegen die Datenverarbeitung </strong></p>
-                        <p>Einer Verwendung Ihrer Daten für Zwecke der Werbung oder der Markt- oder Meinungsforschung können Sie jederzeit widersprechen, z.B. durch eine E-Mail an natalia.karbasova@burda.com oder schriftlich.</p>
-                        <p><strong>Ansprechpartner in Datenschutzfragen</strong></p>
-                        <p>Für Fragen, Anregungen oder Kommentare zum Thema Datenschutz wenden Sie sich bitte per E-Mail an uns, und zwar unter natalia.karbasova@burda.com</p>
-                        <p><strong>Änderungsvorbehalt</strong></p>
-                        <p>Die Verantwortliche Stelle behält sich das Recht vor, diese Erklärung zum Datenschutz unter Beachtung der rechtlichen Vorgaben jederzeit zu ändern.</p>
-                        <p><strong>Links zu anderen Webseiten</strong></p>
-                        <p>Unsere Webseite enthält Links zu anderen Webseiten. Wir haben keinen Einfluss darauf, ob deren Betreiber die Datenschutzbestimmungen einhalten. Bitte informieren Sie sich jeweils in den dortigen Datenschutzerklärungen.</p>
-                        <p><strong>Anpassung Datenschutzerklärung</strong></p>
-                        <p>Die Entwicklung des Internet und die Veränderung gesetzlicher Bestimmungen machen von Zeit zu Zeit Anpassungen unserer Datenschutzerklärung erforderlich. An dieser Stelle können Sie sich jederzeit aktuell darüber informieren, wie
-                            die Verantwortliche Stelle mit personenbezogenen Daten umgeht.</p>
-                        <p>&nbsp;</p>
-                        <p><strong>Stand der Datenschutzerklärung:</strong></p>
-                        <p><strong>Oktober 2014</strong></p>
-                    </p>
+              </div>
+              <div class="item ">
+                <div class="col-xs-4">
+                  <div class="speaker-wrapper">
+                    <img class="portrait" src="images/speaker/Marc_Al_Hames.png"/>
+                    <div class="description">
+                      <span class="name">Marc Al Hames2</span><br />
+                      <span class="role">CEO, Cliqz</span>
+                    </div>
+                  </div>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
+              </div>
             </div>
+            <a class="left carousel-control" href="#prev_speaker_carousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+            <a class="right carousel-control" href="#prev_speaker_carousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+          </div>
         </div>
+      </div>
     </div>
+  </section>
 
-    <script>
-    function startupLead() {
-      fbq('track', 'Lead', {
-      value: "startup",
-      });
-      ga('send', {
-        hitType: 'event',
-        eventCategory: 'startup',
-        eventAction: 'apply',
-        eventLabel: 'startup apply'
-      });
-    }
+  <section class="partner main-partner container">
+    <div class="section-headline-wrapper">
+      <span>Main Partner</span>
+    </div>
+    <div class="row">
+      <img class="col-md-4 col-md-offset-2 col-sm-12 col-xs-12" src="images/partner/hubertburdamedia.png" style="padding-top: 50px; padding-bottom: 60px; padding-left: 0px; padding-right: 0px;"/>
+      <a target="_blank" href="http://dld-conference.com/"><img class="col-md-4 col-sm-12 col-xs-12" src="images/partner/DLD.png" style="padding-bottom: 0px; padding-left: 60px; padding-right: 60px;"/></a>
+    </div>
+  </section>
 
-    function visitorLead() {
-      fbq('track', 'Lead', {
-      value: "visitor",
-      });
-      ga('send', {
-        hitType: 'event',
-        eventCategory: 'visitor',
-        eventAction: 'apply',
-        eventLabel: 'startup apply'
-      });
-    }
-    </script>
+  <section class="partner container">
+    <div class="section-headline-wrapper">
+      <span>Partner</span>
+    </div>
+    <div class="row">
+        <a target="_blank" href="http://www.kpmg.de/"><img class="col-md-4 col-sm-12 col-xs-12" src="images/partner/kpmg.png" style="padding-top:95px; padding-bottom: 95px; padding-left: 45px; padding-right: 45px;"/></a>
+        <a target="_blank" href="http://www.kloeckner.com/"><img class="col-md-4 col-sm-12 col-xs-12" src="images/partner/kloeckner.png" style="padding-top: 62px; padding-bottom: 62px;"/></a>
+        <a target="_blank" href="http://www.nokia.com/"><img class="col-md-4 col-sm-12 col-xs-12" src="images/partner/nokia.png" style="padding-top: 130px; padding-bottom: 130px; padding-left: 45px; padding-right: 45px;"/></a>
+        <a target="_blank" href="http://www.theroyaljungle.com/"><img class="col-md-4 col-sm-12 col-xs-12" src="images/partner/TRJ.png" style="padding-top: 31px; padding-bottom: 31px;"/></a>
+        <a target="_blank" href="http://www.darwins-circle.com/"><img class="col-md-4 col-sm-12 col-xs-12" src="images/partner/darwinscircle.jpg" style="padding-left: 66px; padding-right: 66px; padding-top: 31px; padding-bottom: 31px;"/></a>
+        <a target="_blank" href="https://unicornpitch.com/"><img class="col-md-4 col-sm-12 col-xs-12" src="images/partner/unicorn_pitch.png" style="padding-top: 50px; padding-bottom: 50px; padding-left: 85px; padding-right: 85px;"/></a>
+        <a target="_blank" href="https://www.startup-relation.de/"><img class="col-md-4 col-sm-12 col-xs-12" src="images/partner/startup_relations.png" style="padding-top: 115px; padding-bottom: 115px; padding-left: 25px; padding-right: 25px;"/></a>
+        <a target="_blank" href="https://www.her-career.com/"><img class="col-md-4 col-sm-12 col-xs-12" src="images/partner/hercareer.png" style="padding-top: 40px; padding-bottom: 40px; padding-left: 75px; padding-right: 75px;"/></a>
+        <a target="_blank" href="https://www.clever-shuttle.com/"><img class="col-md-4 col-sm-12 col-xs-12" src="images/partner/clever_shuttle.png" style="padding-top: 126px; padding-bottom: 126px; padding-left: 15px; padding-right: 15px;"/></a>
+      </div>
+  </section>
+
+  <section class="partner container">
+    <div class="section-headline-wrapper">
+      <span>Product Partner</span>
+    </div>
+    <div class="row">
+        <a target="_blank" href="http://www.curingshot.de/"><img class="col-md-4 col-sm-12 col-xs-12" src="images/partner/food/curingshot.png" style="padding-bottom: 116px; padding-top: 116px; padding-left: 25px; padding-right: 25px;"/></a>
+        <a target="_blank" href="https://kaffeemuenchen.de/"><img class="col-md-4 col-sm-12 col-xs-12" src="images/partner/food/kaffee_roesterei.png" style="padding-left: 85px; padding-right: 85px;"/></a>
+        <a target="_blank" href="https://die-frischemanufaktur.de/"><img class="col-md-4 col-sm-12 col-xs-12" src="images/partner/food/frischemanufaktur.png" style="padding-top: 51px; padding-bottom: 51px; padding-left: 85px; padding-right: 85px;"/></a>
+      </div>
+      <div class="row">
+        <a target="_blank" href="https://eizbach.de/"><img class="col-md-4 col-sm-12 col-xs-12 " src="images/partner/food/eizbach.png" style="padding-top: 50px; padding-bottom: 50px; padding-left: 35px; padding-right: 35px;"/></a>
+        <a target="_blank" href="https://hopster.me/"><img class="col-md-4 col-sm-12 col-xs-12 " src="images/partner/food/hopster.png" style="padding-top: 28px; padding-bottom: 28px; padding-left: 65px; padding-right: 60px;"/></a>
+        <a target="_blank" href="https://mangiata.de/"><img class="col-md-4 col-sm-12 col-xs-12" src="images/partner/food/mangiata.png" style="padding-top: 25px; padding-bottom: 24px; padding-left: 60px; padding-right: 60px;"/></a>
+      </div>
+      <div class="row">
+        <a target="_blank" href="https://pizza-innovazione.de/"><img class="col-md-4 col-sm-12 col-xs-12" src="images/partner/food/pizza_innovazione.png" style="padding-top: 77px; padding-bottom: 77px; padding-left: 35px; padding-right: 35px;"/></a>
+        <a target="_blank" href="https://urbansoup.de/"><img class="col-md-4 col-sm-12 col-xs-12" src="images/partner/food/urban_soup.png" style="padding-top: 46px; padding-bottom: 46px; padding-left: 85px; padding-right: 85px;"/></a>
+        <a target="_blank" href="https://grillido.de/"><img class="col-md-4 col-sm-12 col-xs-12" src="images/partner/food/grillido.png" style="padding-top: 51px; padding-bottom: 51px; padding-left: 85px; padding-right: 85px;"/></a>
+      </div>
+      <div class="row">
+        <a target="_blank" href="https://bloomandwild.de/"><img class="col-md-4 col-sm-12 col-xs-12" src="images/partner/food/bloomandwild.png" style="padding-top: 97px; padding-bottom: 97px; padding-left: 85px; padding-right: 85px;"/></a>
+        <a target="_blank" href="https://luftballon-markt.de/"><img class="col-md-4 col-sm-12 col-xs-12" src="images/partner/food/luftballon_markt.png" style="padding-top: 115px; padding-bottom: 115px; padding-left: 85px; padding-right: 85px;"/></a>
+      </div>
+  </section>
+
+
+  <script>
+
+
+  //Speaker Data
+  speaker = [
+    {
+      name: "Marc Al Hames",
+      role: "CEO",
+      company: "Cliqz",
+      image: "Marc_Al_Hames.png"
+    },
+    {
+      name: "Marc Al Hames",
+      role: "CEO",
+      company: "Cliqz",
+      image: "Marc_Al_Hames.png"
+    },
+    {
+      name: "Marc Al Hames",
+      role: "CEO",
+      company: "Cliqz",
+      image: "Marc_Al_Hames.png"
+    },
+  ]
+
+  jQuery.each(speaker, function(i, val) {
+
+
+    $("#speaker-list").append(
+      "<div class=\"col-md-3\">"+
+        "<div class=\"speaker-wrapper\">"+
+          "<img class=\"portrait\" src=\"images/speaker/Marc_Al_Hames.png\"/>"+
+          "<div class=\"description\">"+
+            "<span class=\"name\">Marc Al Hames</span><br />"+
+            "<span class=\"role\">CEO, Cliqz</span>"+
+          "</div>"+
+        "</div>"+
+      "</div>"
+    );
+  });
+
+
+  //Prev Speaker Data
+  prev_speaker = [
+    {
+      name: "Marc Al Hames3",
+      role: "CEO",
+      company: "Cliqz",
+      image: "Marc_Al_Hames.png"
+    },
+    {
+      name: "Marc Al Hames4",
+      role: "CEO",
+      company: "Cliqz",
+      image: "Marc_Al_Hames.png"
+    },
+    {
+      name: "Marc Al Hames5",
+      role: "CEO",
+      company: "Cliqz",
+      image: "Marc_Al_Hames.png"
+    },
+  ]
+
+  jQuery.each(prev_speaker, function(i, val) {
+
+
+    $("#prev_speaker_list").append(
+      "<div class=\"item \">"+
+        "<div class=\"col-xs-4\">"+
+          "<div class=\"speaker-wrapper\">"+
+            "<img class=\"portrait\" src=\"images/speaker/Marc_Al_Hames.png\"/>"+
+            "<div class=\"description\">"+
+              "<span class=\"name\">" + val.name + "</span><br />"+
+              "<span class=\"role\">" + val.role + ", " + val.company + "</span>"+
+            "</div>"+
+          "</div>"+
+        "</div>"+
+      "</div>"
+    );
+  });
+
+
+
+    // Instantiate the Bootstrap carousel
+    $('.multi-item-carousel').carousel({
+      interval: 4000
+    });
+
+    // for every slide in carousel, copy the next slide's item in the slide.
+    // Do the same for the next, next item.
+    $('.multi-item-carousel .item').each(function(){
+      var next = $(this).next();
+      if (!next.length) {
+        next = $(this).siblings(':first');
+      }
+      next.children(':first-child').clone().appendTo($(this));
+
+      if (next.next().length>0) {
+        next.next().children(':first-child').clone().appendTo($(this));
+      } else {
+      	$(this).siblings(':first').children(':first-child').clone().appendTo($(this));
+      }
+    });
+  </script>
 </body>
 
 </html>
